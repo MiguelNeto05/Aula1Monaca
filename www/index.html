@@ -9,8 +9,47 @@
     <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
+
 <body>
 <h1>Controlador de menção</h1> <br>
+
+<input type="button" value="exibir menção" onclick="exibirmencao()">
+
+<script>
+    var mb = 0, b = 0, r = 0, i = 0
+    
+    function exibirmencao() {
+        var mencao
+        mencao = document.getElementbyId('mencao01').value
+        alert(mencao)
+        if (mencao == 'mb'){
+          mb = mb + 1
+          alert(mb)
+            }
+            else if (mencao == 'b'){
+          b = b + 1
+          alert(b)
+        }
+
+         else if (mencao == 'r'){
+          r = r + 1
+          alert(r)
+        }
+
+
+         else if (mencao == 'i'){
+          i = i + 1
+          alert(i)
+        }
+        
+        document.getElementbyId('mostradormb').innerHTML = mb
+        document.getElementbyId('mostradorb').innerHTML = b
+        document.getElementbyId('mostradorr').innerHTML = r
+        document.getElementbyId('mostradori').innerHTML = i
+
+    }
+        
+</script>
 <div class="contanier">
     <div class="row">
        <div class="col">
@@ -35,16 +74,16 @@
             Português      
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao01" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao02" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+       <input type="text" id="mencao03" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao04" name="mencao">
      </div>
    </div> <br>
    <div class="row">
@@ -52,16 +91,16 @@
             Inglês      
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+          <input type="text" id="mencao05" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao06" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao07" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao08" name="mencao">
      </div>
    </div> <br>
    <div class="row">
@@ -69,16 +108,16 @@
             Ed.Físíca      
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao09" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao10" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+      <input type="text" id="mencao11" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao12" name="mencao">
      </div>
    </div> <br>
    <div class="row">
@@ -86,16 +125,16 @@
              Mat
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+            <input type="text" id="mencao13" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao14" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao15" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao16" name="mencao">
      </div>
    </div> <br>
    <div class="row">
@@ -103,16 +142,16 @@
             Física      
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+            <input type="text" id="mencao17" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao18" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao19" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+         <input type="text" id="mencao20" name="mencao">
      </div>
    </div> <br>
    <div class="row">
@@ -120,16 +159,16 @@
             Química      
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao21" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao22" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao23" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao24" name="mencao">
      </div>
    </div> 
    <br>
@@ -138,16 +177,16 @@
             Biologia     
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao25" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao26" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao27" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao28" name="mencao">
      </div>
    </div>
 <br>
@@ -156,16 +195,16 @@
            História   
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao29" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao30" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao31" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+       <input type="text" id="mencao32" name="mencao">
      </div>
    </div><br>
    <div class="row">
@@ -173,16 +212,16 @@
            Geografia    
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao33" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao34" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao35" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao36" name="mencao">
      </div>
    </div>
 <br>
@@ -191,16 +230,16 @@
            Pw2    
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao37" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao38" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao39" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao40" name="mencao">
      </div>
    </div>
 <br>
@@ -209,16 +248,16 @@
             Bd2     
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao41" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao42" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao43" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao44" name="mencao">
      </div>
    </div>
 <br>
@@ -227,16 +266,16 @@
             Ds     
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao45" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao46" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao47" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao48" name="mencao">
      </div>
    </div>
 <br>
@@ -245,16 +284,16 @@
             Ética
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao49" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao50" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao51" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao52" name="mencao">
      </div>
    </div>
 <br>
@@ -263,22 +302,26 @@
             Pam1     
        </div>
          <div class="col">
-           <input type="text" id="fname" name="fname">
+           <input type="text" id="mencao53" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao54" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao55" name="mencao">
        </div>
          <div class="col">
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="mencao56" name="mencao">
      </div>
    </div>
 </div>
 <br>
-<input type="reset" class="inputbtn">
-<input type="button" value="Calcular" class="inputbtn">
+
+
+<h1 id="mostradormb"></h1>
+<h1 id="mostradorb"></h1>
+<h1 id="mostradorr"></h1>
+<h1 id="mostradori"></h1>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
